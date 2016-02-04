@@ -1,0 +1,43 @@
+  Author    : Adriano Alves
+  Date      : Apr.02.2015
+  Course    : CS211E Spring of 2015
+  File Name : howToRun
+  Objective : information how to run and setup 
+              USAServlet.java 
+*************************************************
+
+ - Download and install TomCat (by Apache)
+ - Set the TomCat's path to $CATALINA_HOME
+ - Make sure $JAVA_HOME is avaliable 
+ - Download mySQL connector
+ - Copy mySQL connector to $CATALINA_HOME/lib
+ - Create the directories:
+
+     - $CATALINA_HOME/webapps/USAStates
+         * Place here the files usaStates.html
+           and any image file (.gif, .jpg). 
+
+     - $CATALINA_HOME/webapps/USAStates/WEB-INF
+         * Place here the files web.xml and your
+           JDBCHills.prop
+
+           Format of the JDBCHills.prop is:
+      
+           prop.URL=jdbc:mysql://147.144.1.2:3306/[your database name]
+           prop.USERID=[your user id]
+           prop.PSWD=[your password]
+  
+     - $CATALINA_HOME/webapps/USAStates/WEB-INF/classes
+         * Place here the file USStatesServlet.class
+
+ - Startup TomCat using the command (FOR LINUX)
+
+       sudo $CATALINA_HOME/bin/startup.sh
+
+ - Open your web browser and type 
+       http://[your host]:8080//USAStates/usaStates.html
+
+ - To shutdow TomCat use the command 
+
+       sudo $CATALINA_HOME/bin/shutdown.sh 
+           

@@ -1,0 +1,47 @@
+<!--
+************************************************************
+   Author       : Adriano Alves aalves3
+   Date         : Mar.18.2015
+   File Name    : usaStates.html
+   Servlet Name : USStatesServlet.java
+   Course       : CS211E Spring of 2015
+   Objective    : HW4 html to work with servlet
+                  user will enter a state or capital name,
+                  html will comunicate with servlet and
+                  servlet will send back the answer.  
+   To Run : Please see instructions at 
+            USStatesServlet.java
+************************************************************
+-->
+
+<!DOCTYPE html>    
+<html lang="en">
+
+   <head>
+       <title>CS211E HW4 SERVLETS BY ADRIANO ALVES</title>
+       <meta charset=UTF-8>
+       <style type=text/css>
+          body {background-image: url(flag_usa.jpg);}
+          #hd1 {margin-top: 45px; color: red; font-size: 70px; font-weight: bolder;}
+          #hd2 {color: red; font-size: 40px; font-weight: bolder;}
+          #inp {margin-top: 25px; color: MediumBlue; font-size: 50px; font-weight: bolder;}
+          #btn {margin-top: 25px; font-size: 45px; font-weight: bolder;}
+          #egl {margin-top: 50px;} 
+       </style>
+   </head>
+   <body>
+       <h1 id="hd1"; align="center">Welcome to Adriano's Servlet </h1>
+       <h1 id="hd2"; align="center">Please enter the name of the State or Capital</h1>
+        <center>
+           <form name=form1 method=post action="http://localhost:8080/USAStates/USStatesServlet">  
+<!--       <form name=form1 method=post action="http://192.168.0.105:8080/USAStates/USStatesServlet"> -->
+
+           <input type="text" id="inp" size=10px name="user_input_text">
+           <br>
+           <input id="btn" type="submit" value="Submit">
+
+           <div id="egl"; align="center"> <img src="eagle.gif"/> </div> 
+
+        </form> 
+   </body>
+</html>

@@ -1,0 +1,12 @@
+Author    : Adriano Alves
+Date      : Fev/13/2015
+Course    : CS211E spring of 2015
+File Name : MyJDBC.prop
+Objetive  : This is a properties files belong to
+            a MyJDBC1.java
+
+-------------------------------------------------------
+
+prop.URL=jdbc:mysql://xxx.yyy.zzz.ttt:3306/yourDatabaseName
+prop.USERID=yourUserId
+prop.PSWD=yourPassword
